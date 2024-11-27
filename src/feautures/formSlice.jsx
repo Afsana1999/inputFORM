@@ -6,10 +6,10 @@ const initialState = {
 
 const formSlice = createSlice({
   name: "form",
-  initialState, 
+  initialState,
   reducers: {
     nextStep: (state) => {
-      state.currentStep += 1; 
+      state.currentStep += 1;
     },
   },
 });

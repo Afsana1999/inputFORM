@@ -5,14 +5,13 @@ import SecondInput from "./SecondInput";
 import ThirdInput from "./ThirdInput";
 
 function Form() {
-  const { currentStep } = useSelector((state) => state.form.currentStep);
+  const { currentStep } = useSelector((state) => state.form);
   if (currentStep === 1) {
     return <FirstInput />;
   } else if (currentStep === 2) {
     return <SecondInput />;
-  } else if (currentStep === 3) {
-    return <ThirdInput />;
   }
+  return <ThirdInput />;
 }
 
 export default Form;
