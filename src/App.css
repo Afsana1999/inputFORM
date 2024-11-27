@@ -1,0 +1,10 @@
+body {
+  background-color: #24a4d8;
+}
+.input-content > input {
+  border: 1px solid gray;
+}
+
+.input-content > div{
+  margin-bottom: 20px;
+}
