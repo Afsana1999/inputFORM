@@ -3,7 +3,7 @@ import React from "react";
 import { nextStep } from "../feautures/formSlice";
 
 function FirstInput() {
-  const dispatch = useDispatch((state) => state.currentStep);
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
