@@ -1,14 +1,14 @@
 body {
   background-color: #24a4d8;
-  text-align: center;
-  align-content: center;
   height: 100vh;
   margin: 0 10rem;
 }
 .input-content > input {
   border: 1px solid gray;
 }
-
+.input-content > label {
+  width: 400px;
+}
 .input-content > div {
   margin-bottom: 20px;
 }

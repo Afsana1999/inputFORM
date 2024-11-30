@@ -26,7 +26,7 @@ function SecondInput() {
             <input
               type="text"
               name="Building name"
-               placeholder="Enter name"
+              placeholder="Enter name"
               value={secondData["Building name"]}
               onChange={handleChange}
               className="border w-96 px-2 mx-40"
@@ -35,7 +35,7 @@ function SecondInput() {
           <div>
             <label className="mr-[40px]">City/area</label>
             <input
-            placeholder="Enter City"
+              placeholder="Enter City"
               type="text"
               name="City area"
               value={secondData["City area"]}
@@ -46,7 +46,7 @@ function SecondInput() {
           <div>
             <label>landline number</label>
             <input
-             
+              placeholder="Enter landline number"
               type="number"
               className="border w-96 px-2 mx-36"
               name="Landline number"
@@ -58,7 +58,7 @@ function SecondInput() {
             <label>Address line 1</label>
             <input
               type="text"
-               placeholder="Enter adres"
+              placeholder="Enter adres"
               className="border w-96 px-2 mx-40"
               name="Address line 1"
               value={secondData["Address line 1"]}
@@ -69,7 +69,7 @@ function SecondInput() {
             <label>Address line 2</label>
             <input
               type="text"
-                placeholder="Enter adres"
+              placeholder="Enter adres"
               name="Address line 2"
               value={secondData["Address line 2"]}
               onChange={handleChange}
@@ -79,6 +79,7 @@ function SecondInput() {
           <div>
             <label>PO Box Number</label>
             <input
+              placeholder="Enter box number"
               type="number"
               name="PO Box Number"
               value={secondData["PO Box Number"]}
