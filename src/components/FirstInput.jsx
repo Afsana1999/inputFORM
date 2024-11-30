@@ -46,7 +46,7 @@ function FirstInput() {
             <label>Mobil number</label>
             <input
               placeholder="Enter mobil number"
-              type="text"
+              type="number"
               className="border w-96 px-2 mx-40"
               name="Mobil number"
               value={firstData["Mobil number"]}

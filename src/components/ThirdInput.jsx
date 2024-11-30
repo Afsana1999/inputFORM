@@ -12,7 +12,7 @@ function ThirdInput() {
 
   return (
     <div>
-      <div className="flex  px-10 text-left">
+      <div className="flex  px-10 py-20 text-left">
         <div className="flex ">
           <div>
             {Object.keys(firstData).map((key) => (

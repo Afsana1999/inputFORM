@@ -47,7 +47,7 @@ function SecondInput() {
             <label>landline number</label>
             <input
              
-              type="text"
+              type="number"
               className="border w-96 px-2 mx-36"
               name="Landline number"
               value={secondData["Landline number"]}
@@ -79,7 +79,7 @@ function SecondInput() {
           <div>
             <label>PO Box Number</label>
             <input
-              type="text"
+              type="number"
               name="PO Box Number"
               value={secondData["PO Box Number"]}
               onChange={handleChange}
