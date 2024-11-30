@@ -1,51 +1,89 @@
 import { useDispatch, useSelector } from "react-redux";
 import React from "react";
-import { nextStep } from "../feautures/formSlice";
+import { nextStep, setSecondData } from "../feautures/formSlice";
 
 function SecondInput() {
-  const step = useSelector((state) => state.form.currentStep);
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(nextStep());
   };
+  const secondData = useSelector((state) => state.form.secondData);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    dispatch(setSecondData({ [name]: value }));
+  };
+  console.log(secondData);
+
   return (
     <div>
       <form action="" onSubmit={handleSubmit} className="flex  p-10">
         <div className="input-content">
           <div>
             <label className=" ">Building Name</label>
-            <input type="text" className="border w-96 px-2 mx-40" />
+            <input
+              type="text"
+              name="Building name"
+               placeholder="Enter name"
+              value={secondData["Building name"]}
+              onChange={handleChange}
+              className="border w-96 px-2 mx-40"
+            />
           </div>
           <div>
             <label className="mr-[40px]">City/area</label>
-            <input type="text" className="border w-96 px-2 mx-40" />
+            <input
+            placeholder="Enter City"
+              type="text"
+              name="City area"
+              value={secondData["City area"]}
+              onChange={handleChange}
+              className="border w-96 px-2 mx-40"
+            />
           </div>
           <div>
             <label>landline number</label>
             <input
-              type="number"
+             
+              type="text"
               className="border w-96 px-2 mx-36"
-              name=""
-              id=""
+              name="Landline number"
+              value={secondData["Landline number"]}
+              onChange={handleChange}
             />
           </div>
           <div>
             <label>Address line 1</label>
-            <input type="text" className="border w-96 px-2 mx-40" />
+            <input
+              type="text"
+               placeholder="Enter adres"
+              className="border w-96 px-2 mx-40"
+              name="Address line 1"
+              value={secondData["Address line 1"]}
+              onChange={handleChange}
+            />
           </div>
           <div>
             <label>Address line 2</label>
-            <input type="text" className="border w-96 px-2 mx-40" />
+            <input
+              type="text"
+                placeholder="Enter adres"
+              name="Address line 2"
+              value={secondData["Address line 2"]}
+              onChange={handleChange}
+              className="border w-96 px-2 mx-40"
+            />
           </div>
           <div>
             <label>PO Box Number</label>
             <input
-              type="number"
+              type="text"
+              name="PO Box Number"
+              value={secondData["PO Box Number"]}
+              onChange={handleChange}
               className="border w-96 px-2 mx-36"
-              name=""
-              id=""
             />
           </div>
         </div>

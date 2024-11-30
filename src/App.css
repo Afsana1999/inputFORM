@@ -1,10 +1,130 @@
 body {
   background-color: #24a4d8;
+  text-align: center;
+  align-content: center;
+  height: 100vh;
+  margin: 0 10rem;
 }
 .input-content > input {
   border: 1px solid gray;
 }
 
-.input-content > div{
+.input-content > div {
   margin-bottom: 20px;
+}
+
+.progressbar {
+  display: flex;
+  user-select: none;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #000;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.progress-steps {
+  display: inline-block;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.progress-line-active {
+  height: 2px;
+  background: red;
+  opacity: 1;
+  transform-origin: left;
+  animation: animate 1s linear forwards;
+  transform: scaleX(0);
+}
+
+.progress-line {
+  margin-top: 20px;
+  display: inline-block;
+  height: 1px;
+  width: 50%;
+  background: red;
+  opacity: 0.5;
+}
+.progress-steps {
+  display: inline-block;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.progress-line-active {
+  height: 2px;
+  background: red;
+  opacity: 1;
+  transform-origin: left;
+  animation: animate 1s linear forwards;
+  transform: scaleX(0);
+}
+
+.progress-line {
+  margin-top: 20px;
+  display: inline-block;
+  height: 1px;
+  width: 50%;
+  background: red;
+  opacity: 0.5;
+}
+
+.progress-steps {
+  display: inline-block;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.progress-line-active {
+  height: 2px;
+  background: red;
+  opacity: 1;
+  transform-origin: left;
+  animation: animate 1s linear forwards;
+  transform: scaleX(0);
+}
+
+.progress-line {
+  margin-top: 20px;
+  display: inline-block;
+  height: 1px;
+  width: 50%;
+  background: red;
+  opacity: 0.5;
+}
+
+.progress-steps {
+  display: inline-block;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.wrapper-circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: inline-block !important;
+}
+.progress-content {
+  font-size: 12px;
+}
+
+.progress-circle-active {
+  background: red;
+  opacity: 1;
+  color: #fff;
+}
+
+.progress-circle {
+  display: inline-block;
+  padding: 4px;
+  border: 1px solid red;
+  height: 30px;
+  width: 30px;
+  display: inline-block !important;
+  border-radius: 50%;
+  background: #f4f0ec;
+  opacity: 0.5;
+  margin-top: 3.5px;
 }
